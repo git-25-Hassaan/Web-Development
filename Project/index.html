@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Web Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="./phone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="LOGO" />
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Service</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact US</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to my first Project</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eum
+            voluptate, totam pariatur.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btns">Order Now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./first.png" alt="" />
+                <h1 class="h-secondary center">KAR-98K</h1>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit repudiandae tempore deserunt. Excepturi facere soluta minus, voluptatem similique laborum fuga quis dolorum ab commodi?
+                </p>
+                <button class="btn btn-block">Show More</button>
+            </div>
+            <div class="box">
+                <img src="./second.png" alt="" />
+                <h2 class="h-secondary center">Optical Crossbow</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit repudiandae tempore deserunt. Excepturi facere soluta minus, voluptatem similique laborum fuga quis dolorum ab commodi?
+                </p>
+                <button class="btn btn-block">Show More</button>
+            </div>
+            <div class="box">
+                <img src="./third.png" alt="" />
+                <h2 class="h-secondary center">One-eye Sawed Off</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit repudiandae tempore deserunt. Excepturi facere soluta minus, voluptatem similique laborum fuga quis dolorum ab commodi?
+                </p>
+                <button class="btn btn-block">Show More</button>
+            </div>
+        </div>
+        <div id="services">
+            <div class="box">
+                <img src="./fourth.png" alt="" />
+                <h2 class="h-secondary center">Casusal Bow</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit repudiandae tempore deserunt. Excepturi facere soluta minus, voluptatem similique laborum fuga quis dolorum ab commodi?
+                </p>
+                <button class="btn btn-block">Show More</button>
+            </div>
+            <div class="box">
+                <img src="./fifth.png" alt="" />
+                <h2 class="h-secondary center">R-45 (45-ACP)</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit repudiandae tempore deserunt. Excepturi facere soluta minus, voluptatem similique laborum fuga quis dolorum ab commodi?
+                </p>
+                <button class="btn btn-block">Show More</button>
+            </div>
+            <div class="box">
+                <img src="./sixth.png" alt="" />
+                <h2 class="h-secondary center">Sawed Off</h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit repudiandae tempore deserunt. Excepturi facere soluta minus, voluptatem similique laborum fuga quis dolorum ab commodi?
+                </p>
+                <button class="btn btn-block">Show More</button>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div class="clients">
+            <div class="client-item">
+                <img src="logo1.png" alt="Twitter" />
+            </div>
+            <div class="client-item">
+                <img src="logo2.png" alt="Twitter" />
+            </div>
+            <div class="client-item">
+                <img src="logo3.png" alt="Twitter" />
+            </div>
+            <div class="client-item">
+                <img src="logo4.png" alt="Twitter" />
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div id="contact-box">
+            <form class="form-group" action="" method="">
+                <h1 class="h-primary center" style="margin-bottom: -2%;">Contact Us</h1>
+                <label for="name">Full Name:</label>
+                <input type="name" class="form-control" name="name" id="name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" class="form-control" name="email" id="email">
+
+                <label for="phone">Contact:</label>
+                <input type="phone" class="form-control" name="phone" id="phone">
+
+                <label for="message">Enter you message:</label>
+                <textarea class="form-control" name="messaage" id="message" rows="3"></textarea><br>
+                <button type="submit" class="btn btn-block ">Submit</button>
+            </form>
+
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineWeapon.com. All rights reserved!
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
