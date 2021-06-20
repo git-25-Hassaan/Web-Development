@@ -1,0 +1,14 @@
+.btn-info{
+    color: white;
+
+}
+.btn-info:hover{
+    font-weight: bold;
+}
+.orange-btn{
+    background-color: orange;
+}
+.orange-btn:hover{
+    font-weight: bold;
+    color: white;
+}

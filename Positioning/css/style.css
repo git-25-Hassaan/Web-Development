@@ -1,0 +1,30 @@
+#second{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+#third{
+    background-color: yellow;
+}
+#announcement{
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#stick{
+    position: sticky;
+    bottom: 0;
+    background-color: red;
+}
+#abs{
+    background-color: tomato;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: -5px;
+}
+#first{
+    position: relative;
+}

@@ -86,7 +86,7 @@ ul {
 /* Home Section */
 #home::before {
   content: "";
-  background: url("./bg.jpg") no-repeat center center/cover;
+  background: linear-gradient(yellow, orange);
   position: absolute;
   height: 80%;
   width: 100%;
@@ -180,7 +180,7 @@ ul {
   height: 112%;
   z-index: -1;
   opacity: 0.8;
-  background: url("./contactus.jpg") no-repeat center center/cover;
+  background: url("contactus.jpg") no-repeat center center/cover;
 }
 #contact-box {
   display: flex;
