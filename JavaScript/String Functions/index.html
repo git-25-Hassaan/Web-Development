@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Functions</title>
+  </head>
+  <body>
+    <h1>This is a container</h1>
+    <script>
+      // Printing a String
+      var str = "This is a String.";
+      console.log(str);
+
+      // First occurence of a substring.
+      var position = str.indexOf("is");
+      console.log(position);
+
+      // Last occurence of a substring.
+      position = str.lastIndexOf("is");
+      console.log(position);
+
+      // Slicing substring from a string.
+      var subStr = str.substring(0, 5);
+      console.log(subStr);
+
+      var slice = str.slice(0, 5);
+      console.log(slice);
+
+      // Replacing String
+      var replaced = str.replace("String", "new String");
+      console.log(replaced);
+
+      //UpperCase & LowerCase
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+
+      // Concatination
+      var conStr = str.concat(" Concatinated.");
+      console.log(conStr);
+
+      // Trim Function
+      var space = "    This containes    whitespaces     ";
+      console.log(space);
+      console.log(space.trim());
+
+      // Return Character and its code from a String (!Important)
+      var char2 = str.charAt(2);
+      console.log(char2 + " -> " + str.charCodeAt(2));
+
+      //   String slicing
+      console.log(
+        str[10] + str[11] + str[12] + str[13] + str[14] + str[15] + str[16]
+      );
+    </script>
+  </body>
+</html>
