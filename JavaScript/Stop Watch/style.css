@@ -1,0 +1,102 @@
+body {
+  background: rgb(224, 161, 224);
+  margin: 0;
+  padding: 0;
+}
+#clock {
+  background: #000;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  padding: 20px 20px;
+  text-align: center;
+  margin: 10px;
+}
+#back {
+  background-color: tomato;
+  padding: 15px 20px;
+  margin-top: 6%;
+  margin-left: 29%;
+  margin-right: 29%;
+  border: 2px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas: "hour minute seconds";
+}
+#hour {
+  width: 30%;
+  background-color: gray;
+  color: rgb(246, 255, 255);
+  padding: 50px 50px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2rem;
+}
+#minute {
+  width: 30%;
+  background-color: gray;
+  color: rgb(246, 255, 255);
+  padding: 50px 50px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2rem;
+}
+#seconds {
+  width: 30%;
+  background-color: gray;
+  color: rgb(246, 255, 255);
+  padding: 50px 50px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2rem;
+}
+#btn-grid {
+  background-color: none;
+  padding: 10px 20px;
+  margin-top: 4%;
+  margin-left: 29%;
+  margin-right: 29%;
+  justify-content: center;
+  display: grid;
+  grid-gap: 80px;
+  grid-template-areas: "hour minute seconds";
+}
+.btn {
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 7px 15px;
+  width: 120px;
+  font-weight: bold;
+  text-align: center;
+  height: 40px;
+}
+.btn:hover {
+  animation-name: animate;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.btn-reset {
+  background-color: rgb(48, 93, 228);
+  color: white;
+}
+.btn-start {
+  background-color: greenyellow;
+  color: black;
+}
+.btn-stop {
+  background-color: red;
+  color: white;
+}

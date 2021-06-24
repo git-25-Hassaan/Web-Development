@@ -42,10 +42,10 @@ html {
   animation-iteration-count: 1;
 }
 @keyframes logo {
-  from {
+  0% {
     transform: scale(1);
   }
-  to {
+  100% {
     transform: scale(1.2);
   }
 }
@@ -86,7 +86,7 @@ ul {
 /* Home Section */
 #home::before {
   content: "";
-  background: linear-gradient(yellow, orange);
+  background: linear-gradient(green, yellow);
   position: absolute;
   height: 80%;
   width: 100%;
@@ -166,10 +166,10 @@ ul {
   align-items: center;
 }
 .clients img {
-  height: 120px;
+  height: 100px;
 }
 .client-item {
-  padding: 20px;
+  padding: 50px;
 }
 
 /* Contact Section */
@@ -180,7 +180,7 @@ ul {
   height: 112%;
   z-index: -1;
   opacity: 0.8;
-  background: url("contactus.jpg") no-repeat center center/cover;
+  background: black;
 }
 #contact-box {
   display: flex;
