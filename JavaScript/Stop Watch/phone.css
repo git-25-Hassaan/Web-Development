@@ -1,0 +1,56 @@
+#clock {
+  font-size: 0.5rem;
+  padding: 20px 5px;
+  margin: auto;
+  width: 100%;
+}
+#back {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  padding-right: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  grid-gap: 25px;
+  grid-template-areas: "hour minute seconds";
+}
+#hour {
+  width: 50%;
+  height: 30%;
+  padding: 25px 25px;
+  font-size: 1.3rem;
+}
+#minute {
+  width: 50%;
+  height: 30%;
+  padding: 25px 25px;
+  font-size: 1.3rem;
+}
+#seconds {
+  width: 50%;
+  height: 30%;
+  padding: 25px 25px;
+  font-size: 1.3rem;
+}
+#btn-grid {
+  padding: 10px 20px;
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-gap: 10px;
+  grid-template-areas: "one" "two" "three";
+}
+.btn:hover {
+  animation-name: animate;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

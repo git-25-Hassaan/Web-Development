@@ -1,62 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template Area</title>
     <style>
-        .container{
-            display: grid;
-            grid-gap: 0.1rem;
-            grid-template-areas:
-            "navbar navbar navbar navbar navbar"
-            "aside section section section section"
-            "footer footer footer footer footer ";
-
-        }
-        .item{
-            background-color: cyan;
-            border: 2px solid black;
-        }
-        #navbar{
-            grid-area: navbar;
-            padding: 20px;
-            background-color: blueviolet;
-            color: white;
-            font-weight: bold;
-        }
-        #section{
-            grid-area: section;
-            padding: 20px;
-            background-color: whitesmoke;
-            color:black;
-            font-weight: bold;
-        }
-        #aside{
-            grid-area: aside;
-            /* padding: 20px; */
-            background-color: yellow;
-            color: blue;
-            font-weight: bold;
-        }
-        footer{
-            grid-area: footer;
-            padding: 20px;
-            background-color: rgb(54, 45, 45);
-            color: white;
-            font-weight: bold;
-            justify-content: center;
-        }
+      .container {
+        display: grid;
+        grid-gap: 0.1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar navbar"
+          "aside section section section section"
+          "footer footer footer footer footer ";
+      }
+      .item {
+        background-color: cyan;
+        border: 2px solid black;
+      }
+      #navbar {
+        grid-area: navbar;
+        padding: 20px;
+        background-color: blueviolet;
+        color: white;
+        font-weight: bold;
+      }
+      #section {
+        grid-area: section;
+        padding: 20px;
+        background-color: whitesmoke;
+        color: black;
+        font-weight: bold;
+      }
+      #aside {
+        grid-area: aside;
+        /* padding: 20px; */
+        background-color: yellow;
+        color: blue;
+        font-weight: bold;
+      }
+      footer {
+        grid-area: footer;
+        padding: 20px;
+        background-color: rgb(54, 45, 45);
+        color: white;
+        font-weight: bold;
+        justify-content: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div id="navbar" class="item"> Home About ContactUs</div>
-        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic temporibus corporis laudantium ducimus asperiores vero velit et cupiditate quos magni. Impedit laudantium rerum deleniti consequuntur fugiat consequatur quae, a reprehenderit laboriosam recusandae perferendis ullam ipsum. Temporibus maiores nisi expedita! Voluptatem, neque recusandae. Quod, quisquam? Voluptas consequatur quisquam id, sunt quos accusantium saepe voluptate possimus quidem obcaecati adipisci tempore quibusdam sequi. Omnis totam architecto, cupiditate deserunt eaque adipisci porro sit at, eius repudiandae quibusdam nostrum obcaecati illum debitis delectus aperiam maxime. Harum, sed? Et alias eligendi molestias perspiciatis voluptatibus exercitationem tempora ipsam aliquid, quaerat ea doloribus nobis doloremque neque. Quas quo iusto maxime architecto, quos saepe, delectus temporibus nobis corrupti optio adipisci. Consequatur harum, consequuntur natus voluptatibus sint molestiae non rerum eaque, recusandae tempora asperiores iste ipsum maiores ullam commodi nihil qui molestias itaque dolorum corrupti hic minus, optio sunt illum. Repellendus odio distinctio, at quae consequuntur aperiam minima illum fuga necessitatibus quos reiciendis corporis rem reprehenderit quia quaerat ex architecto, harum inventore nisi similique soluta saepe autem! Quasi pariatur magni sapiente eius esse officiis. Enim alias laborum odit dolore rem cupiditate dicta autem aperiam nisi vero, qui repudiandae sequi, iusto soluta suscipit officia molestias dignissimos error. Iusto fugiat illo et numquam harum possimus quos. Est pariatur ipsam in soluta optio voluptatem itaque nam quis natus necessitatibus, dolorum quisquam. Sit eligendi voluptatibus explicabo nulla. Voluptates tenetur architecto eos cupiditate blanditiis nobis explicabo, debitis veritatis itaque esse dolores harum ipsum reprehenderit quis quidem. Minus cumque nulla sint id accusantium voluptates animi itaque veritatis, assumenda error explicabo odio, voluptas provident quidem quasi distinctio delectus.</div>
-        <div id="aside" class="item">lorem ipsum, tempore optio, deserunt, fuga dolor blanditiis nisi esse itaque nesciunt? Id corrupti itaque natus quibusdam incidunt mollitia soluta, sint quis rerum sapiente eos dolores dicta numquam alias. Necessitatibus aut repellat nisi laboriosam tenetur amet officia sapiente vitae aspernatur, debitis consequuntur odit quos at! Repudiandae eaque molestiae eius ipsum aperiam quisquam delectus architecto, exercitationem tempora nobis sapiente provident sunt. Expedita quas placeat hic, eligendi assumenda architecto beatae excepturi dolorum obcaecati sit! Sequi, fugiat! Ducimus non excepturi fugiat!</div>
-        <footer>Copyright &copy; www.grids.com. All rights reserved.</footer>
-        <!-- <div class="item">This is item-1</div>
+      <div id="navbar" class="item">Home About ContactUs</div>
+      <div id="section" class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+        dolor sit, amet consectetur adipisicing elit. Hic temporibus corporis
+        laudantium ducimus asperiores vero velit et cupiditate quos magni.
+        Impedit laudantium rerum deleniti consequuntur fugiat consequatur quae,
+        a reprehenderit laboriosam recusandae perferendis ullam ipsum.
+        Temporibus maiores nisi expedita! Voluptatem, neque recusandae. Quod,
+        quisquam? Voluptas consequatur quisquam id, sunt quos accusantium saepe
+        voluptate possimus quidem obcaecati adipisci tempore quibusdam sequi.
+        Omnis totam architecto, cupiditate deserunt eaque adipisci porro sit at,
+        eius repudiandae quibusdam nostrum obcaecati illum debitis delectus
+        aperiam maxime. Harum, sed? Et alias eligendi molestias perspiciatis
+        voluptatibus exercitationem tempora ipsam aliquid, quaerat ea doloribus
+        nobis doloremque neque. Quas quo iusto maxime architecto, quos saepe,
+        delectus temporibus nobis corrupti optio adipisci. Consequatur harum,
+        consequuntur natus voluptatibus sint molestiae non rerum eaque,
+        recusandae tempora asperiores iste ipsum maiores ullam commodi nihil qui
+        molestias itaque dolorum corrupti hic minus, optio sunt illum.
+        Repellendus odio distinctio, at quae consequuntur aperiam minima illum
+        fuga necessitatibus quos reiciendis corporis rem reprehenderit quia
+        quaerat ex architecto, harum inventore nisi similique soluta saepe
+        autem! Quasi pariatur magni sapiente eius esse officiis. Enim alias
+        laborum odit dolore rem cupiditate dicta autem aperiam nisi vero, qui
+        repudiandae sequi, iusto soluta suscipit officia molestias dignissimos
+        error. Iusto fugiat illo et numquam harum possimus quos. Est pariatur
+        ipsam in soluta optio voluptatem itaque nam quis natus necessitatibus,
+        dolorum quisquam. Sit eligendi voluptatibus explicabo nulla. Voluptates
+        tenetur architecto eos cupiditate blanditiis nobis explicabo, debitis
+        veritatis itaque esse dolores harum ipsum reprehenderit quis quidem.
+        Minus cumque nulla sint id accusantium voluptates animi itaque
+        veritatis, assumenda error explicabo odio, voluptas provident quidem
+        quasi distinctio delectus.
+      </div>
+      <div id="aside" class="item">
+        lorem ipsum, tempore optio, deserunt, fuga dolor blanditiis nisi esse
+        itaque nesciunt? Id corrupti itaque natus quibusdam incidunt mollitia
+        soluta, sint quis rerum sapiente eos dolores dicta numquam alias.
+        Necessitatibus aut repellat nisi laboriosam tenetur amet officia
+        sapiente vitae aspernatur, debitis consequuntur odit quos at!
+        Repudiandae eaque molestiae eius ipsum aperiam quisquam delectus
+        architecto, exercitationem tempora nobis sapiente provident sunt.
+        Expedita quas placeat hic, eligendi assumenda architecto beatae
+        excepturi dolorum obcaecati sit! Sequi, fugiat! Ducimus non excepturi
+        fugiat!
+      </div>
+      <footer>Copyright &copy; www.grids.com. All rights reserved.</footer>
+      <!-- <div class="item">This is item-1</div>
         <div class="item">This is item-2</div>
         <div class="item">This is item-3</div>
         <div class="item">This is item-4</div>
@@ -67,5 +109,5 @@
         <div class="item">This is item-9</div>
         <div class="item">This is item-10</div> -->
     </div>
-</body>
+  </body>
 </html>

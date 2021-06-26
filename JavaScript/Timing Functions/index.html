@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timing Functions</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Page Loaded</h1>
+      <br />
+      <span id="time"></span>
+    </div>
+    <script>
+      // setTimeout --> Allows us to run a function once after the interval of time.
+      // clearTimeout --> Allows us to run a function repeatedly after the interval of time.
+
+      let confo = confirm("Please Confirm.");
+      function greet(name, careText) {
+        console.log("Good Morning " + name + careText);
+      }
+      //   Set Time Out / Clear Time Out
+      timeOut = setTimeout(greet, 2000, "Muavia", " Take care");
+      if (confo == true) {
+        clearTimeout(timeOut);
+      } else {
+        console.log("You did cancel.");
+        clearTimeout(timeOut);
+      }
+
+      //   Set Intervals / Clear Intervals
+      //   setInterval(greet, 2000, "Muavia", "dafa ho");
+
+      function displayTime() {
+        time = new Date();
+        console.log(time);
+        document.getElementById("time").innerHTML = time;
+      }
+      setInterval(displayTime, 1000);
+    </script>
+  </body>
+</html>
