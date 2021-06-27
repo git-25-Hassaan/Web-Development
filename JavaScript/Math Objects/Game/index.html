@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div id="top">
+      <div id="left" class="same">Brain Test Game</div>
+      <div id="right" class="same">Your Score: <span id="score">0</span></div>
+    </div>
+    <div id="main" class="container">
+      <div id="box">
+        <div id="first" class="boxes"></div>
+        <div id="operator" class="small">+</div>
+        <div id="second" class="boxes"></div>
+        <div class="equal">=</div>
+        <div id="result" class="boxes">
+          <textarea id="answer" class="area" cols="3" rows="1"></textarea>
+        </div>
+      </div>
+      <button type="button" onclick="start()" class="btn">Start!</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
