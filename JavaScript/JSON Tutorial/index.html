@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON in JavaScript</title>
+  </head>
+  <body>
+    <div class="container"><h1>JSON Tutorial</h1></div>
+    <script>
+      // Creating a JSON Object
+      let obj = {
+        name: "Hassaan",
+        age: 20,
+        gender: "Male,",
+        email: "abc@gmail.com",
+      };
+      console.log(obj);
+
+      // Converting JSON object into string using "Stringify"
+      let jsonStr = JSON.stringify(obj);
+      console.log(jsonStr);
+
+      // Using string functions on JSON string
+      jsonStr = jsonStr.replace("Hassaan", "Sadaf");
+      jsonStr = jsonStr.replace("Male", "Female");
+      console.log(jsonStr);
+
+      // Parsing valid JSON string to JSON Object
+      newObj = JSON.parse(jsonStr);
+      console.log(newObj);
+    </script>
+  </body>
+</html>
