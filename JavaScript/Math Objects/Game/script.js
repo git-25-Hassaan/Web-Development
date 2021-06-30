@@ -1,9 +1,12 @@
+let j = 0;
 let i = 0;
 let score = 0;
+let check = false;
+let store = new Array();
+
 function display() {
   // Counting intervals
   i++;
-
   // Displaying Random Numbers
   let f = 1;
   let s = 100;
@@ -21,40 +24,54 @@ function display() {
   let random2 = f2 + (s2 - f2) * Math.random();
   let index = Math.round(random2);
   op = document.getElementById("operator").innerHTML = operators[index];
-  console.log(i);
 
+  store.push(n1, n2);
+  console.log("array", store);
+
+  let ans = document.getElementById("answer").value;
+  console.log(ans);
   // Checking operators result
   let result;
   if (op == "+") {
-    result = n1 + n2;
-  } else if (op == "-") {
-    result = n1 - n2;
+    result = store[j - 2] + store[j - 1];
+    if (ans == result) {
+      score += 5;
+      document.getElementById("score").innerHTML = score;
+    } else {
+      score += 0;
+      document.getElementById("score").innerHTML = score;
+    }
+  } else {
+    result = store[j - 2] - store[j - 1];
+    if (ans == result) {
+      score += 5;
+      document.getElementById("score").innerHTML = score;
+    } else {
+      score += 0;
+      document.getElementById("score").innerHTML = score;
+    }
   }
-
-  // Controlling Score
-  check();
+  j += 2;
+  console.log("Result", result);
+  console.log("score ", score);
 
   // Stop after these intervals.
-  if (i == 3) {
+  if (i > 2) {
     clearInterval(val);
-    score = 0;
+    check = false;
+    store = [];
+    console.log("array ", store);
   }
-  document.getElementById("answer").innerHTML = "";
+  document.getElementById("answer").value = "";
 }
 function start() {
-  document.getElementById("answer").innerHTML = "";
-  val = setInterval(display, 5000);
-  i = 0;
-  score = 0;
-}
-function check() {
-  let ans = document.getElementById("answer");
-  console.log(ans);
-  if (ans === result) {
-    score += 5;
-    document.getElementById("score").innerHTML = score;
+  if (check == true) {
+    console.log("Already started.");
   } else {
-    score += 0;
-    document.getElementById("score").innerHTML = score;
+    i = 0;
+    score = 0;
+    document.getElementById("answer").value = "";
+    val = setInterval(display, 10000);
+    check = true;
   }
 }
